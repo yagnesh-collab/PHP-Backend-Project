@@ -2,7 +2,7 @@
 error_reporting(0);
 session_start();
 include '../controller/database.php';
-include '../credintials.php';
+include '../credentials.php';
 $api_url= 'https://trial.craig.mtcserver15.com/api/properties?api_key='.$api_key;
 //Decoding data from API
 $data=json_decode(file_get_contents($api_url), true);
